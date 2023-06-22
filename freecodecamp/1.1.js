@@ -19,3 +19,5 @@ const myVerb = "ran";
 const myAdverb = "quickly";
 
 const wordBlanks = "Reks "+ myNoun + " same " + myAdjective +" 23e432 "+myVerb+ " ohgo "+ myAdverb ; 
+
+const myArray = ['some', 1, 2, 4];
