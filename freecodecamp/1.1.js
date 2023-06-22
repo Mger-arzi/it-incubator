@@ -25,3 +25,5 @@ const myArray = ['some', 1, 2, 4];
 const myArray2 = [['mySome', 4,3,1], ["hyi", 1,3,4]];
 
 const myData = myArray[0]
+
+myArray[0]= 45
