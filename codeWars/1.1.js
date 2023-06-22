@@ -11,3 +11,17 @@ function findAverage(array) {
 	else return average
 
 }
+
+
+function getChar(c){
+	let code = String.fromCharCode(c);
+console.log(code);
+	
+}
+getChar(8)
+const code = 97;
+
+const character = String.fromCharCode(code);
+
+console.log(character);
+
