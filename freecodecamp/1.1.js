@@ -21,3 +21,5 @@ const myAdverb = "quickly";
 const wordBlanks = "Reks "+ myNoun + " same " + myAdjective +" 23e432 "+myVerb+ " ohgo "+ myAdverb ; 
 
 const myArray = ['some', 1, 2, 4];
+
+const myArray2 = [['mySome', 4,3,1], ["hyi", 1,3,4]];
