@@ -36,3 +36,6 @@ const myArray = [
   ];
   
   const myData2 = myArray[2][1];
+
+  const myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3])
