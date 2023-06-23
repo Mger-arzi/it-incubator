@@ -74,3 +74,9 @@ function fun2() {
     output += " oopsGlobal: " + oopsGlobal;
   }
   console.log(output);
+
+  function myLocalScope() {
+  let myVar = 2
+	console.log('inside myLocalScope', myVar);
+  }
+  myLocalScope()
