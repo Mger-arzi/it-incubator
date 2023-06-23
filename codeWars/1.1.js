@@ -25,3 +25,7 @@ const character = String.fromCharCode(code);
 
 console.log(character);
 
+function findShort(s){
+	let arr = s.split(" ").sort((a, b) => a.length - b.length);
+	return arr[0].length
+  }
