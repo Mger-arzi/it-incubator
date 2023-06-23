@@ -45,3 +45,17 @@ const removedFromMyArray = myArray.pop()
 
 const myArray = [["John", 23], ["dog", 3]];
 const removedFromMyArray2 = myArray.shift()
+
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift(["Paul", 35])
+
+function reusableFunction(){
+	console.log("Hi World")
+  }
+  reusableFunction()
+
+  function functionWithArgs(a, b){
+	console.log(a+b)
+  }
+  functionWithArgs(2,3)
