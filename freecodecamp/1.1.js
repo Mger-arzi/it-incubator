@@ -28,7 +28,7 @@ const myData = myArray[0]
 
 myArray[0]= 45
 
-const myArray = [
+const myArray4 = [
 	[1, 2, 3],
 	[4, 5, 6],
 	[7, 8, 9],
@@ -79,6 +79,7 @@ function fun2() {
   let myVar = 2
 	console.log('inside myLocalScope', myVar);
   }
+}
   myLocalScope()
 
 
@@ -92,3 +93,20 @@ let outerWear = "sweater"
 }
 
 myOutfit();
+
+function nextInLine(arr, item) {
+	arr.push(item)
+	return arr.shift();
+  }
+  let testArray = [1,2,3,4,5]
+  console.log(nextInLine(testArray ,6))
+
+
+  function testEqual(val) {
+  if (val ==12) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testEqual(10);
