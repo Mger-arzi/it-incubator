@@ -168,3 +168,13 @@ function testLogicalAnd(val) {
 	return "No";
 	}
   testLogicalAnd(10);
+
+
+  function testLogicalOr(val) {
+	if (val < 10 || val > 20) {
+	  return "Outside";
+	}
+  
+	return "Inside";
+  }
+testLogicalOr(15);
