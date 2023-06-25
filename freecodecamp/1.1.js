@@ -37,18 +37,18 @@ const myArray4 = [
   
   const myData2 = myArray[2][1];
 
-  const myArray = [["John", 23], ["cat", 2]];
-myArray.push(["dog", 3])
+  const myArray5 = [["John", 23], ["cat", 2]];
+myArray5.push(["dog", 3])
 
-const myArray = [["John", 23], ["cat", 2]];
-const removedFromMyArray = myArray.pop()
+const myArray9= [["John", 23], ["cat", 2]];
+const removedFromMyArray = myArray9.pop()
 
-const myArray = [["John", 23], ["dog", 3]];
-const removedFromMyArray2 = myArray.shift()
+const myArray21 = [["John", 23], ["dog", 3]];
+const removedFromMyArray2 = myArray21.shift()
 
-const myArray = [["John", 23], ["dog", 3]];
-myArray.shift();
-myArray.unshift(["Paul", 35])
+const myArray11 = [["John", 23], ["dog", 3]];
+myArray11.shift();
+myArray11.unshift(["Paul", 35])
 
 function reusableFunction(){
 	console.log("Hi World")
@@ -75,12 +75,14 @@ function fun2() {
   }
   console.log(output);
 
-  function myLocalScope() {
-  let myVar = 2
-	console.log('inside myLocalScope', myVar);
-  }
+  
 }
-  myLocalScope()
+
+function myLocalScope() {
+	let myVar = 2
+	  console.log('inside myLocalScope', myVar);
+	}
+myLocalScope()
 
 
   const outerWear = "T-Shirt";
@@ -208,3 +210,15 @@ function testElse(val) {
 	}
   }
   testElseIf(7);
+
+
+  function orderMyLogic(val) {
+	if (val < 5) {
+	  return "Less than 5";
+	} else if (val < 10) {
+	  return "Less than 10";
+	} else {
+	  return "Greater than or equal to 10";
+	}
+  }
+  console.log(orderMyLogic(7));
