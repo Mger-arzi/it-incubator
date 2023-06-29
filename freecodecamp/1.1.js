@@ -449,3 +449,11 @@ const testObj2= {
 
 const playerNumber = 16; 
 const player = testObj2[playerNumber]; 
+
+const myDog2 = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+myDog2.name = "Happy Coder"
