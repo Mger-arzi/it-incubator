@@ -440,3 +440,12 @@ const testObj = {
 };
 const hatValue = testObj.hat;      
 const shirtValue = testObj.shirt;   
+
+const testObj2= {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+const playerNumber = 16; 
+const player = testObj2[playerNumber]; 
