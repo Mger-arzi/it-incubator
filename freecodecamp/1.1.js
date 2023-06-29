@@ -457,3 +457,12 @@ const myDog2 = {
   "friends": ["freeCodeCamp Campers"]
 };
 myDog2.name = "Happy Coder"
+
+const myDog3 = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+delete myDog.tails
