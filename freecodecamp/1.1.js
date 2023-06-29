@@ -425,3 +425,10 @@ else{
 }
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+const myDog = {
+  name: 'Nat',
+  legs: 2,
+  tails: 2,
+  friends: ['Ira', 'Yla']
+};
