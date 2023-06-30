@@ -84,3 +84,14 @@ function oddOrEven(array) {
     ? "even"
     : "odd";
 }
+
+function validatePIN (pin) {
+	let check  = pin.length  === 4 || pin.length  === 6
+	  const numMatch = /^[0-9]/g
+	
+	if (check && pin.match(numMatch)){  
+	  return true;
+	}  
+	
+	return false;
+  }
