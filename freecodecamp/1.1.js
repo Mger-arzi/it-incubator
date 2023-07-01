@@ -613,3 +613,17 @@ function multiplyAll(arr) {
       return sum(arr, n - 1) + arr[n - 1];
     }
   }
+  function lookUpProfile(name, prop) {
+	for(let i = 0; i < contacts.length; i++){
+		if ( name === contacts[i].firstName) {
+  
+		  if(contacts[i].hasOwnProperty(prop)){
+			return contacts[i][prop]
+	}else{
+	  return "No such property";
+	   }
+	  }
+	 }
+	return "No such contact"
+  }
+  lookUpProfile("Akira", "likes");
