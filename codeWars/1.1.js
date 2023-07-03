@@ -96,6 +96,7 @@ function validatePIN (pin) {
 	return false;
   }
 
+
   function checkExam(array1, array2) {
 	let grade = 0;
 	for(let i = 0; i = array1.length; i++){
@@ -117,4 +118,3 @@ function validatePIN (pin) {
 	}
 	return grade
 }
-console.log('a','d','v','a','d','v')
