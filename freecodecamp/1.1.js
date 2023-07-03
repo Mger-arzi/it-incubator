@@ -636,3 +636,9 @@ function multiplyAll(arr) {
   
   
 console.log("sdfsd")
+
+function convertToInteger(str) {
+	return parseInt(str, 2)
+  }
+  
+  convertToInteger("10011");
