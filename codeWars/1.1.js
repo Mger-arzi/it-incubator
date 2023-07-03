@@ -95,3 +95,26 @@ function validatePIN (pin) {
 	
 	return false;
   }
+
+  function checkExam(array1, array2) {
+	let grade = 0;
+	for(let i = 0; i = array1.length; i++){
+		for(let j = 0; j = array2.length; j++){
+
+			if(array1[i] === array2[j]){
+				grade+=4
+
+				if(array2[j] ===''){
+					grade+=0
+				}
+			}
+		
+			else{
+				grade+=1
+			}
+
+		}
+	}
+	return grade
+}
+console.log('a','d','v','a','d','v')
