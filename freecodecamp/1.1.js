@@ -627,3 +627,12 @@ function multiplyAll(arr) {
 	return "No such contact"
   }
   lookUpProfile("Akira", "likes");
+
+  function randomRange(myMin, myMax) {
+	return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+  }
+
+
+  
+  
+console.log("sdfsd")
