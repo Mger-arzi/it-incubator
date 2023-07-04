@@ -665,3 +665,9 @@ function convertToInteger(str) {
 	return Arr
 	}
   }
+
+  function rangeOfNumbers(startNum, endNum) {
+	return  startNum > endNum 
+	? []
+	: rangeOfNumbers(startNum ,endNum - 1).concat(endNum)  
+   };
