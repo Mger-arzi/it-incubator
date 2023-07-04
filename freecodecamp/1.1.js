@@ -656,3 +656,12 @@ function convertToInteger(str) {
   }
   
   checkSign(10);
+
+  function countdown(n){
+	if(n < 1){
+	return []
+	} else {let Arr = countdown(n - 1)
+	Arr.unshift(n)
+	return Arr
+	}
+  }
