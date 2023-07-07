@@ -709,4 +709,11 @@ const HIGH_TEMPERATURES = {
 	tomorrow: 80
   };
   const {tomorrow, today} = HIGH_TEMPERATURES
-  
+
+  const HIGH_TEMPERATURES2 = {
+	yesterday: 75,
+	today: 77,
+	tomorrow: 80
+  };
+	
+  const {today: highToday, tomorrow: highTomorrow}  = HIGH_TEMPERATURES2
