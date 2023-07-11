@@ -716,4 +716,15 @@ const HIGH_TEMPERATURES = {
 	tomorrow: 80
   };
 	
-  const {today: highToday, tomorrow: highTomorrow}  = HIGH_TEMPERATURES2
+  const {today: highToday_2, tomorrow: highTomorrow}  = HIGH_TEMPERATURES2
+
+
+  const LOCAL_FORECAST = {
+	yesterday: { low: 61, high: 75 },
+	today: { low: 64, high: 77 },
+	tomorrow: { low: 68, high: 80 }
+  };
+	
+  const  { today: {low:  lowToday } } = LOCAL_FORECAST;
+  const  { today: {high: highToday} }= LOCAL_FORECAST;
+  
