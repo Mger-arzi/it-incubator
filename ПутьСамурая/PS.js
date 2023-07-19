@@ -2,19 +2,19 @@ function randomRange(myMin, myMax) {
   return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
 }
 
-let p = new Promise(function (resolve, reject) {
-  let isGoodVideo = false;
-  if (isGoodVideo) {
-    resolve("Is video nise");
-  } else {
-    reject("Is video failed");
-  }
-});
-p.then((mess) => {
-  console.log("Mess:" + mess);
-}).catch((error) => {
-  console.warn("Error:" + error);
-});
+// let p = new Promise(function (resolve, reject) {
+//   let isGoodVideo = false;
+//   if (isGoodVideo) {
+//     resolve("Is video nise");
+//   } else {
+//     reject("Is video failed");
+//   }
+// });
+// p.then((mess) => {
+//   console.log("Mess:" + mess);
+// }).catch((error) => {
+//   console.warn("Error:" + error);
+// });
 
 let MgerLoveNat = true;
 let NatLoveMger = false;
@@ -39,19 +39,33 @@ let NatLoveMger = false;
 
 let life = new Promise(function (resolve, reject) {
   let MgerLoveNat = true;
-  let NatLoveMger = false;
+  let NatLoveMger = true;
 
   if (MgerLoveNat && NatLoveMger) {
-    resolve("happiness");
+    resolve({
+      life: "happiness",
+      name: "hz",
+    });
   } else {
     reject("H 	U 	I");
   }
 });
 
-life
-  .then((mess) => {
-    console.log("Happi: " + mess);
+// life
+//   .then((mess) => {
+//     console.log("Happy: " + mess.life);
+//   })
+//   .catch((error) => {
+//     console.error("Err: " + error);
+//   });
+
+fetch("https://reqres.in/api/users")
+  .then((response) => {
+    if (!response.ok) throw new Error(`Ошибка: ${response.status}`);
+    return response.json();
   })
-  .catch((error) => {
-    console.warn("Err: " + error);
-  });
+  .then((d) => {
+    console.log(d);
+    console.warn(d.data[3].first_name);
+  })
+  .catch((error) => console.error(error + " error"));
